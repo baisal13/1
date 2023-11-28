@@ -1,3 +1,10 @@
+cargo = [
+    {"kilometer": 3, "weight": 200},
+    {"kilometer": 5, "weight": 300},
+    {"kilometer": 6, "weight": 213}
+]
+
+
 required_weight = 713
 def check_cargo(locations):
     total_weight = 0
@@ -8,3 +15,21 @@ def check_cargo(locations):
                 box['kilometer'] += 1  #
     
     return total_weight == required_weight
+
+while True:
+    locations = []
+    for i in range(3):
+        while True:
+            try:
+                loc = int(input(f"Enter kilometer mark {i + 1}: "))
+                if loc < 0:
+                    raise ValueError("Kilometer mark must be a positive number.")
+                locations.append(loc)
+                break
+            except ValueError as e:
+                print(e)
+    if check_cargo(locations):
+        print("Congratulations! You found all the cargo.")
+        break
+    else
+        print("Oops! The cargo wasn't found at these locations. Boxes moved. Try again.")
