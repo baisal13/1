@@ -1,8 +1,7 @@
 cargo = [
     {"kilometer": 3, "weight": 200},
     {"kilometer": 5, "weight": 300},
-    {"kilometer": 6, "weight": 213}
-]
+    {"kilometer": 6, "weight": 213}]
 
 
 required_weight = 713
