@@ -13,8 +13,9 @@ def check_cargo(locations):
             if box['kilometer'] == loc:
                 total_weight += box['weight']
                 box['kilometer'] += 1  #
-    
+
     return total_weight == required_weight
+
 
 while True:
     locations = []
@@ -31,5 +32,5 @@ while True:
     if check_cargo(locations):
         print("Congratulations! You found all the cargo.")
         break
-    else
+    else:
         print("Oops! The cargo wasn't found at these locations. Boxes moved. Try again.")
