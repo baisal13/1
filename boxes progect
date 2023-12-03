@@ -33,4 +33,4 @@ while True:
         print("Congratulations! You found all the cargo.")
         break
     else:
-        print("Oops! The cargo wasn't found at these locations. Boxes moved. Try again.")
+        print("Oops! The cargo wasn't found at these locations. Boxes moved. Please try again.")
